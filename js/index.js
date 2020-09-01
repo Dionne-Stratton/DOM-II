@@ -88,3 +88,29 @@ h2.forEach(function (h2) {
     })
 })
 
+// other
+
+const buttons = document.getElementsByClassName('btn');
+
+buttons[0].addEventListener('click', (event) => {
+    event.target.style.backgroundColor = '#014a3b';
+    event.stopPropagation();
+})
+
+buttons[1].addEventListener('click', (event) => {
+    event.target.style.backgroundColor = '#c9048e';
+    event.stopPropagation();
+})
+
+buttons[2].addEventListener('click', (event) => {
+    event.target.style.backgroundColor = 'purple';
+    // event.stopPropagation(); to see what happens without it.
+})
+
+const destination = document.querySelectorAll('.destination');
+
+destination.forEach(function (paragraph) {
+paragraph.addEventListener('click', (event) => {
+    event.target.style.backgroundColor = 'lightblue';
+})
+})
